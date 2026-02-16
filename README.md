@@ -3,11 +3,11 @@ Java Student Management System using OOP, JDBC, Swing GUI and SOLID principles.
 
 Overview
 This project is a Java-based Student Management System built using:
-Object-Oriented Programming (OOP)
-Java Swing for GUI
-SOLID Principles
-JDBC for database access
-MySQL database
+Object-Oriented Programming (OOP),
+Java Swing for GUI,
+SOLID Principles,
+JDBC for database access,
+MySQL database,
 Builder Design Pattern
 The system allows students stored in the database to log in and view their details and calculated tuition based on their student type.
 
@@ -42,8 +42,8 @@ The abstract class Student defines:
 public abstract double calculateTuition();
 
 Subclasses implement their own tuition logic:
-UndergraduateStudent
-GraduateStudent
+UndergraduateStudent,
+GraduateStudent,
 PartTimeStudent
 If we want to add a new student type (e.g., InternationalStudent), we do NOT modify existing classes.
 We simply create a new subclass.
@@ -59,8 +59,8 @@ System.out.println(s.calculateTuition());
 
 
 The program does not need to know if s is:
-UndergraduateStudent
-GraduateStudent
+UndergraduateStudent,
+GraduateStudent,
 PartTimeStudent
 All subclasses correctly override calculateTuition().
 This demonstrates polymorphism and LSP compliance.
@@ -74,16 +74,16 @@ Optional fields for different student types
 This allows polymorphic behavior while maintaining relational simplicity.
 
 Technologies Used
-Java 21
-MySQL
-Maven
-JDBC
-Builder Pattern
-Swing GUI
+Java 21,
+MySQL,
+Maven,
+JDBC,
+Builder Pattern,
+Swing GUI,
 SOLID Principles
 
 How to Run
-Create MySQL database
-Update DBConnection credentials
-Run Main.java
+Create MySQL database,
+Update DBConnection credentials,
+Run Main.java,
 Login using a student stored in the database
